@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-1d5a68993fe2200120e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ControlTheory",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ControlTheory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ControlTheory-Debug-d7bf3f818f0db3f76a01.json",
+					"name" : "ControlTheory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ControlTheory_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ControlTheory_autogen-Debug-82ebdd1a1a9cf8c9d68c.json",
+					"name" : "ControlTheory_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ControlTheory_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ControlTheory_autogen_timestamp_deps-Debug-94343611144759eafc37.json",
+					"name" : "ControlTheory_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+		"source" : "D:/ControlTheory/ControlTheory"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

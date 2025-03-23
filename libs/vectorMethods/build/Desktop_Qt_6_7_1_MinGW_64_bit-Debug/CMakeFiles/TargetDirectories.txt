@@ -1,0 +1,12 @@
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/MathMethods.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/MathMethodsExecutable.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/MathMethods_autogen_timestamp_deps.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/MathMethods_autogen.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/MathMethodsExecutable_autogen_timestamp_deps.dir
+D:/vectors/vectorsMerthods/vectorMethods/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/MathMethodsExecutable_autogen.dir

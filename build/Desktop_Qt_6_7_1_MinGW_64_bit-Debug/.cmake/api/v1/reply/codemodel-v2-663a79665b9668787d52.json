@@ -1,0 +1,167 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2a1b65e8c724fb613bf0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "libs/MathsAlgebreLineaire",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.MathsAlgebreLineaire-Debug-2955f5f9f481b0cc231b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libs/MathsAlgebreLineaire",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ControlTheory",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "MathMethods",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ControlTheory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ControlTheory-Debug-b23e9f91d168207f77ee.json",
+					"name" : "ControlTheory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ControlTheory_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ControlTheory_autogen-Debug-82ebdd1a1a9cf8c9d68c.json",
+					"name" : "ControlTheory_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ControlTheory_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ControlTheory_autogen_timestamp_deps-Debug-348d6fa0d6cd9c4a5c53.json",
+					"name" : "ControlTheory_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathMethods::@ecda8461fd3b2194a93b",
+					"jsonFile" : "target-MathMethods-Debug-54e3e5f86ae54aa2f1d7.json",
+					"name" : "MathMethods",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathMethodsExecutable::@ecda8461fd3b2194a93b",
+					"jsonFile" : "target-MathMethodsExecutable-Debug-21f7e9d9380429f62fca.json",
+					"name" : "MathMethodsExecutable",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathMethodsExecutable_autogen::@ecda8461fd3b2194a93b",
+					"jsonFile" : "target-MathMethodsExecutable_autogen-Debug-a86db7ec9847c61d635a.json",
+					"name" : "MathMethodsExecutable_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathMethodsExecutable_autogen_timestamp_deps::@ecda8461fd3b2194a93b",
+					"jsonFile" : "target-MathMethodsExecutable_autogen_timestamp_deps-Debug-7780ee5129130285353d.json",
+					"name" : "MathMethodsExecutable_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathMethods_autogen::@ecda8461fd3b2194a93b",
+					"jsonFile" : "target-MathMethods_autogen-Debug-cd697b6f20eb1074c490.json",
+					"name" : "MathMethods_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathMethods_autogen_timestamp_deps::@ecda8461fd3b2194a93b",
+					"jsonFile" : "target-MathMethods_autogen_timestamp_deps-Debug-80fad14b5074bdc72e52.json",
+					"name" : "MathMethods_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+		"source" : "D:/ControlTheory/ControlTheory"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
