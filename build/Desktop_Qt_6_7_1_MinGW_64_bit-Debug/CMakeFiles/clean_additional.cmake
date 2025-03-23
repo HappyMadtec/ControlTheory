@@ -3,12 +3,12 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
   file(REMOVE_RECURSE
+  "CMakeFiles\\ControlTheory-Tests_autogen.dir\\AutogenUsed.txt"
+  "CMakeFiles\\ControlTheory-Tests_autogen.dir\\ParseCache.txt"
   "CMakeFiles\\ControlTheory_autogen.dir\\AutogenUsed.txt"
   "CMakeFiles\\ControlTheory_autogen.dir\\ParseCache.txt"
-  "CMakeFiles\\Tests_autogen.dir\\AutogenUsed.txt"
-  "CMakeFiles\\Tests_autogen.dir\\ParseCache.txt"
+  "ControlTheory-Tests_autogen"
   "ControlTheory_autogen"
-  "Tests_autogen"
   "libs\\MathsAlgebreLineaire\\CMakeFiles\\MathMethodsExecutable_autogen.dir\\AutogenUsed.txt"
   "libs\\MathsAlgebreLineaire\\CMakeFiles\\MathMethodsExecutable_autogen.dir\\ParseCache.txt"
   "libs\\MathsAlgebreLineaire\\CMakeFiles\\MathMethods_autogen.dir\\AutogenUsed.txt"

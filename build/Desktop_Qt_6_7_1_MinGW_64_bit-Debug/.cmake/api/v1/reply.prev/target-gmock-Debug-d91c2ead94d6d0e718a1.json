@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_main.a"
+			"path" : "lib/libgmock.a"
 		}
 	],
 	"backtrace" : 3,
@@ -23,7 +23,7 @@
 		"files" : 
 		[
 			"libs/googletest/googletest/cmake/internal_utils.cmake",
-			"libs/googletest/googletest/CMakeLists.txt"
+			"libs/googletest/googlemock/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -33,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 141,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
@@ -51,7 +51,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 158,
+				"line" : 116,
 				"parent" : 0
 			},
 			{
@@ -63,13 +63,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 153,
+				"line" : 98,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 113,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
@@ -96,7 +96,15 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googletest/gtest_main_autogen/include"
+					"path" : "D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googlemock/gmock_autogen/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ControlTheory/ControlTheory/libs/googletest/googlemock/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ControlTheory/ControlTheory/libs/googletest/googlemock"
 				},
 				{
 					"backtrace" : 7,
@@ -128,18 +136,18 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 6,
-			"id" : "gtest::@f3055240739694365a17"
+			"id" : "gmock_autogen_timestamp_deps::@d24f781d804ac047b25e"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "gtest_main_autogen::@f3055240739694365a17"
+			"id" : "gmock_autogen::@d24f781d804ac047b25e"
 		},
 		{
-			"id" : "gtest_main_autogen_timestamp_deps::@f3055240739694365a17"
+			"backtrace" : 6,
+			"id" : "gtest::@f3055240739694365a17"
 		}
 	],
-	"id" : "gtest_main::@f3055240739694365a17",
+	"id" : "gmock::@d24f781d804ac047b25e",
 	"install" : 
 	{
 		"destinations" : 
@@ -154,12 +162,12 @@
 			"path" : "C:/Program Files (x86)/ControlTheory"
 		}
 	},
-	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_main.a",
+	"name" : "gmock",
+	"nameOnDisk" : "libgmock.a",
 	"paths" : 
 	{
-		"build" : "libs/googletest/googletest",
-		"source" : "libs/googletest/googletest"
+		"build" : "libs/googletest/googlemock",
+		"source" : "libs/googletest/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -192,25 +200,25 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googletest/gtest_main_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googlemock/gmock_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "libs/googletest/googletest/src/gtest_main.cc",
+			"path" : "libs/googletest/googlemock/src/gmock-all.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googletest/gtest_main_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googlemock/gmock_autogen/timestamp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googletest/gtest_main_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/googlemock/gmock_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

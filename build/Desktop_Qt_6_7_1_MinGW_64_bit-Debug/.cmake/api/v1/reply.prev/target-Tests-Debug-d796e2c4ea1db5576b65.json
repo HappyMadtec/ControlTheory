@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 85,
+				"line" : 90,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 89,
+				"line" : 95,
 				"parent" : 0
 			}
 		]
@@ -81,7 +81,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -92,19 +93,19 @@
 			"id" : "MathMethods::@ecda8461fd3b2194a93b"
 		},
 		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@f3055240739694365a17"
+		},
+		{
+			"id" : "Tests_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 0,
 			"id" : "Tests_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "gtest::@f3055240739694365a17"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gtest_main::@f3055240739694365a17"
-		},
-		{
-			"id" : "Tests_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Tests::@6890427a1f51a3e7e1df",
@@ -161,28 +162,29 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2
+				3
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				3
+				4
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				4
+				5
 			]
 		}
 	],
@@ -199,6 +201,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Tests/Test_exmaple.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Tests/Input_Test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

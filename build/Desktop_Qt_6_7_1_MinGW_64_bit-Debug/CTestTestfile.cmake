@@ -4,7 +4,7 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(RunUnitTests "D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Tests.exe")
-set_tests_properties(RunUnitTests PROPERTIES  _BACKTRACE_TRIPLES "D:/ControlTheory/ControlTheory/CMakeLists.txt;95;add_test;D:/ControlTheory/ControlTheory/CMakeLists.txt;0;")
+add_test(RunUnitTests "Tests")
+set_tests_properties(RunUnitTests PROPERTIES  _BACKTRACE_TRIPLES "D:/ControlTheory/ControlTheory/CMakeLists.txt;105;add_test;D:/ControlTheory/ControlTheory/CMakeLists.txt;0;")
 subdirs("libs/MathsAlgebreLineaire")
 subdirs("libs/googletest")

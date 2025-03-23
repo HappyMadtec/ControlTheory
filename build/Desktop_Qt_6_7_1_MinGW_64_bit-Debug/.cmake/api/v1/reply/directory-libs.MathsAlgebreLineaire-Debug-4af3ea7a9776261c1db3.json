@@ -45,7 +45,7 @@
 				"libs/MathsAlgebreLineaire/libMathMethods.dll.a"
 			],
 			"targetId" : "MathMethods::@ecda8461fd3b2194a93b",
-			"targetIndex" : 3,
+			"targetIndex" : 6,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -58,7 +58,7 @@
 				"libs/MathsAlgebreLineaire/libMathMethods.dll"
 			],
 			"targetId" : "MathMethods::@ecda8461fd3b2194a93b",
-			"targetIndex" : 3,
+			"targetIndex" : 6,
 			"type" : "target"
 		},
 		{
@@ -84,7 +84,7 @@
 				"libs/MathsAlgebreLineaire/MathMethodsExecutable.exe"
 			],
 			"targetId" : "MathMethodsExecutable::@ecda8461fd3b2194a93b",
-			"targetIndex" : 4,
+			"targetIndex" : 7,
 			"type" : "target"
 		}
 	],

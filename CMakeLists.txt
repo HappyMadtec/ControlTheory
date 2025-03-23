@@ -19,6 +19,8 @@ set(PROJECT_SOURCES
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    src/TransferFunction.cpp
+    TransferFunction.h
 )
 
 # === Executable Definition ===
@@ -44,6 +46,9 @@ add_subdirectory(libs/MathsAlgebreLineaire)
 add_subdirectory(libs/googletest)
 
 # === Link Libraries to Main App ===
+target_include_directories(ControlTheory PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
 target_link_libraries(ControlTheory PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     MathMethods
@@ -82,11 +87,16 @@ endif()
 # === Unit Tests ===
 enable_testing()
 
-add_executable(Tests
+add_executable(ControlTheory-Tests
     Tests/Test_exmaple.cpp
+    Tests/Input_Test.cpp
 )
 
-target_link_libraries(Tests PRIVATE
+target_include_directories(ControlTheory-Tests PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
+target_link_libraries(ControlTheory-Tests PRIVATE
     MathMethods
     gtest
     gtest_main

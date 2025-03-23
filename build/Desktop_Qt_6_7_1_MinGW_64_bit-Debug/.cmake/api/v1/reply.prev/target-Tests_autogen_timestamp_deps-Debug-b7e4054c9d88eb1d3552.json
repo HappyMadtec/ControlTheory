@@ -20,10 +20,10 @@
 			"id" : "MathMethods::@ecda8461fd3b2194a93b"
 		},
 		{
-			"id" : "gtest::@f3055240739694365a17"
+			"id" : "gtest_main::@f3055240739694365a17"
 		},
 		{
-			"id" : "gtest_main::@f3055240739694365a17"
+			"id" : "gtest::@f3055240739694365a17"
 		}
 	],
 	"id" : "Tests_autogen_timestamp_deps::@6890427a1f51a3e7e1df",

@@ -1,5 +1,6 @@
 ControlTheory_autogen/timestamp: \
 	D:/ControlTheory/ControlTheory/CMakeLists.txt \
+	D:/ControlTheory/ControlTheory/TransferFunction.h \
 	D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
@@ -8,6 +9,7 @@ ControlTheory_autogen/timestamp: \
 	D:/ControlTheory/ControlTheory/main.cpp \
 	D:/ControlTheory/ControlTheory/mainwindow.cpp \
 	D:/ControlTheory/ControlTheory/mainwindow.h \
+	D:/ControlTheory/ControlTheory/src/TransferFunction.cpp \
 	D:/qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
 	D:/qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
 	D:/qt/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
