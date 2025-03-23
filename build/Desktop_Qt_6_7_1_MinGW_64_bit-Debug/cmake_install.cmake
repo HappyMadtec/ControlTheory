@@ -50,6 +50,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/MathsAlgebreLineaire/cmake_install.cmake")
+  include("D:/ControlTheory/ControlTheory/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/libs/googletest/cmake_install.cmake")
 
 endif()
 

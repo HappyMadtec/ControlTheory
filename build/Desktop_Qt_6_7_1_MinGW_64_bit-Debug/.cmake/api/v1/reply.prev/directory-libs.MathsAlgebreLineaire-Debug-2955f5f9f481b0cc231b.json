@@ -1,0 +1,96 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"libs/MathsAlgebreLineaire/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libs/MathsAlgebreLineaire/libMathMethods.dll.a"
+			],
+			"targetId" : "MathMethods::@ecda8461fd3b2194a93b",
+			"targetIndex" : 3,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"libs/MathsAlgebreLineaire/libMathMethods.dll"
+			],
+			"targetId" : "MathMethods::@ecda8461fd3b2194a93b",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"libs/MathsAlgebreLineaire/vecteur.h",
+				"libs/MathsAlgebreLineaire/plan.h",
+				"libs/MathsAlgebreLineaire/matrice.h",
+				"libs/MathsAlgebreLineaire/mainwindow.h",
+				"libs/MathsAlgebreLineaire/mathmethods_export.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"libs/MathsAlgebreLineaire/MathMethodsExecutable.exe"
+			],
+			"targetId" : "MathMethodsExecutable::@ecda8461fd3b2194a93b",
+			"targetIndex" : 4,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "libs/MathsAlgebreLineaire",
+		"source" : "libs/MathsAlgebreLineaire"
+	}
+}
