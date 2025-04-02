@@ -6,25 +6,129 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1071</width>
+    <height>609</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_7">
+        <attribute name="title">
+         <string>Home</string>
+        </attribute>
+        <widget class="QFrame" name="frame">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1011</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="transferFunctionButton_4">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>60</y>
+            <width>371</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Transfer Function</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="a">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>130</y>
+            <width>371</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Analysis</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="quitButton_4">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>200</y>
+            <width>371</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Quit</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1071</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuControl_Theory">
+    <property name="title">
+     <string>Control Theory</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHistory">
+    <property name="title">
+     <string>History</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionPlots"/>
+   </widget>
+   <addaction name="menuControl_Theory"/>
+   <addaction name="menuHistory"/>
+   <addaction name="menuTools"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPlots">
+   <property name="text">
+    <string>Plots</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
