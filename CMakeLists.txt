@@ -10,20 +10,36 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+# === Find Qt ===
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Core)
 
-# === Sources ===
+# === Add Subdirectories ===
+add_subdirectory(libs/MathsAlgebreLineaire)
+add_subdirectory(libs/googletest)
+
+# === Core Library: TransferFunction ===
+add_library(ControlTheoryLib
+    TransferFunction.h
+    src/TransferFunction.cpp
+)
+
+target_include_directories(ControlTheoryLib PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
+target_link_libraries(ControlTheoryLib PUBLIC
+    Qt${QT_VERSION_MAJOR}::Core
+)
+
+# === Application: ControlTheory ===
 set(PROJECT_SOURCES
     main.cpp
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    src/TransferFunction.cpp
-    TransferFunction.h
 )
 
-# === Executable Definition ===
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(ControlTheory
         MANUAL_FINALIZATION
@@ -41,17 +57,15 @@ else()
     endif()
 endif()
 
-# === Add Subdirectories ===
-add_subdirectory(libs/MathsAlgebreLineaire)
-add_subdirectory(libs/googletest)
-
-# === Link Libraries to Main App ===
 target_include_directories(ControlTheory PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
+
 target_link_libraries(ControlTheory PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Core
     MathMethods
+    ControlTheoryLib
 )
 
 # === macOS & Windows Bundle Settings ===
@@ -97,9 +111,11 @@ target_include_directories(ControlTheory-Tests PRIVATE
 )
 
 target_link_libraries(ControlTheory-Tests PRIVATE
+    Qt${QT_VERSION_MAJOR}::Core
     MathMethods
+    ControlTheoryLib
     gtest
     gtest_main
 )
 
-add_test(NAME RunUnitTests COMMAND Tests)
+add_test(NAME RunUnitTests COMMAND ControlTheory-Tests)
