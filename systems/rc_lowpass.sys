@@ -1,0 +1,15 @@
+# RC Low-Pass Filter
+# First Order System
+#
+# Circuit: voltage source -> R -> C -> ground
+# Output: voltage across capacitor Vc(p)
+#
+# H(p) = 1 / (1 + RCp)
+#
+# R = 1000 ohms, C = 1e-3 F
+# K = 1, tau = RC = 1.0 s
+#
+# Numerator coefficients (ascending powers of p)
+: 1
+# Denominator coefficients (ascending powers of p)
+:: 1 1.0

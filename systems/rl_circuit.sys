@@ -1,0 +1,15 @@
+# RL Circuit - Current Response
+# First Order System
+#
+# Circuit: voltage source -> R -> L -> ground
+# Output: current i(p)
+#
+# H(p) = (1/R) / (1 + (L/R)*p)
+#
+# R = 10 ohms, L = 0.5 H
+# K = 1/R = 0.1 A/V, tau = L/R = 0.05 s
+#
+# Numerator coefficients (ascending powers of p)
+: 0.1
+# Denominator coefficients (ascending powers of p)
+:: 1 0.05

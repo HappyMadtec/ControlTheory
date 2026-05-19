@@ -1,0 +1,13 @@
+# DC Motor - Speed / Voltage
+# First Order System
+#
+# Model: J*dw/dt + f*w = Km*u
+# H(p) = (Km/f) / (1 + (J/f)*p)
+#
+# Km = 0.5 N.m/A, f = 0.1 N.m.s/rad, J = 0.02 kg.m^2
+# K = Km/f = 5.0 rad/s/V, tau = J/f = 0.2 s
+#
+# Numerator coefficients (ascending powers of p)
+: 5.0
+# Denominator coefficients (ascending powers of p)
+:: 1 0.2

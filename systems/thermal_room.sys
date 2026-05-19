@@ -1,0 +1,13 @@
+# Thermal System - Room Temperature / Heating Power
+# First Order System
+#
+# Model: Cth*dT/dt + T/Rth = P/Rth  (simplified)
+# H(p) = Rth / (1 + Rth*Cth*p)
+#
+# Rth = 0.05 K/W, Cth = 10000 J/K
+# K = Rth = 0.05 K/W, tau = Rth*Cth = 500 s
+#
+# Numerator coefficients (ascending powers of p)
+: 0.05
+# Denominator coefficients (ascending powers of p)
+:: 1 500

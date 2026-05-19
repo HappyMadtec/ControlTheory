@@ -26,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(ControlTheory
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        fileparser.h fileparser.cpp
     )
 else()
     if(ANDROID)
@@ -40,13 +41,12 @@ else()
 endif()
 
 # === Add Subdirectories ===
-add_subdirectory(libs/MathsAlgebreLineaire)
-add_subdirectory(libs/googletest)
+#add_subdirectory(libs/MathsAlgebreLineaire)
+#add_subdirectory(libs/googletest)
 
 # === Link Libraries to Main App ===
 target_link_libraries(ControlTheory PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
-    MathMethods
 )
 
 # === macOS & Windows Bundle Settings ===
@@ -62,9 +62,9 @@ set_target_properties(ControlTheory PROPERTIES
     MACOSX_BUNDLE TRUE
 )
 
-if(WIN32)
-    set_target_properties(ControlTheory PROPERTIES WIN32_EXECUTABLE TRUE)
-endif()
+#if(WIN32)
+#    set_target_properties(ControlTheory PROPERTIES WIN32_EXECUTABLE TRUE)
+#endif()
 
 # === Install ControlTheory App ===
 include(GNUInstallDirs)
@@ -79,6 +79,22 @@ if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(ControlTheory)
 endif()
 
+# qt_finalize_executable sets WIN32_EXECUTABLE back to TRUE on Windows,
+# so we override it after finalization
+if(WIN32)
+    set_target_properties(ControlTheory PROPERTIES WIN32_EXECUTABLE FALSE)
+endif()
+
+# === Google Test (fetched automatically) ===
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    GIT_REPOSITORY https://github.com/google/googletest.git
+    GIT_TAG v1.14.0
+)
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
 # === Unit Tests ===
 enable_testing()
 
@@ -87,7 +103,7 @@ add_executable(Tests
 )
 
 target_link_libraries(Tests PRIVATE
-    MathMethods
+    Qt${QT_VERSION_MAJOR}::Widgets
     gtest
     gtest_main
 )

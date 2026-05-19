@@ -1,0 +1,13 @@
+# Liquid Tank Level - Height / Input Flow
+# First Order System
+#
+# Model: A*dh/dt + a*h = Qin
+# H(p) = (1/a) / (1 + (A/a)*p)
+#
+# A = 2.0 m^2 (tank cross section), a = 0.5 m^2 (outlet coefficient)
+# K = 1/a = 2.0 m/m^3.s^-1, tau = A/a = 4.0 s
+#
+# Numerator coefficients (ascending powers of p)
+: 2.0
+# Denominator coefficients (ascending powers of p)
+:: 1 4.0
