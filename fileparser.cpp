@@ -1,6 +1,7 @@
 #include "fileparser.h"
 
 FileParser::FileParser(const QString &path) : m_path(path) {
+    parser();
 }
 
 void FileParser::parser()
